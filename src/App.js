@@ -1,5 +1,44 @@
 import "./styles.css";
 
+const notes = undefined;
+
+export default function App() {
+  if (typeof notes === "undefined") {
+    return "No hay notas que mostrar";
+  }
+
+  if (notes.length === 0) {
+    return "No hay notas que mostrar";
+  }
+
+  return (
+    <div>
+      {notes.map((note) => {
+        return (
+          <div>
+            <p>{note.content}</p>
+            <small>
+              <time>{note.date}</time>
+            </small>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+/*
+{notes.map((note) => {
+  return (
+    <p>
+      <strong>{note.id}</strong>
+    </p>
+  );
+})}
+*/
+
+/*
+import "./styles.css";
+
 const notes = [
   {
     id: 1,
@@ -37,12 +76,4 @@ export default function App() {
     </div>
   );
 }
-/*
-{notes.map((note) => {
-  return (
-    <p>
-      <strong>{note.id}</strong>
-    </p>
-  );
-})}
 */
