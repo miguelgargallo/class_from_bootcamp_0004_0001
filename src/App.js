@@ -27,17 +27,16 @@ export default function App() {
       {notes.map((note) => {
         return (
           <div>
-            <p>
-              <strong>{note.id}</strong>
-              {note.content}
-            </p>
+            <p>{note.content}</p>
+            <small>
+              <time>{note.date}</time>
+            </small>
           </div>
         );
       })}
     </div>
   );
 }
-
 /*
 {notes.map((note) => {
   return (
