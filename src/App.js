@@ -1,14 +1,14 @@
 import "./styles.css";
 
-const notes = undefined;
+const notes = [];
 
 export default function App() {
-  if (typeof notes === "undefined") {
+  if (typeof notes === "undefined" || notes.length === 0) {
     return "No hay notas que mostrar";
   }
 
   if (notes.length === 0) {
-    return "No hay notas que mostrar";
+    return "No hay que mostrar";
   }
 
   return (
