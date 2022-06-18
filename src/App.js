@@ -16,7 +16,7 @@ const notes = [
   {
     id: 3,
     content: "HTML equals easy",
-    Date: "2022-03-01T01:10:01.001Z",
+    date: "2022-03-01T01:10:01.001Z",
     important: true
   }
 ];
