@@ -22,5 +22,15 @@ const notes = [
 ];
 
 export default function App() {
-  return <h1>Clase 4 del Bootcamp</h1>;
+  return (
+    <div>
+      {notes.map((note) => {
+        return (
+          <p>
+            <strong>{note.id}</strong>
+          </p>
+        );
+      })}
+    </div>
+  );
 }
